@@ -9,6 +9,8 @@ searchHouse search house
 searchHouse looking for house
 searchHouse find house
 searchHouse for sale
+searchHouse près de
+searchHouse Maisons à vendre
 priceChanges price changes
 hi hi
 help help
