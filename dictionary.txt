@@ -9,8 +9,17 @@ searchHouse search house
 searchHouse looking for house
 searchHouse find house
 searchHouse for sale
-searchHouse près de
+searchHouse à vendre
 searchHouse Maisons à vendre
+searchHouse Appartement à vendre
+searchHouse_City à (.*)
+searchHouse_City près de (.*)
+searchHouse_Bedrooms (.*) chambres
+searchHouse_Range entre (.*) et (.*)
+
+
+
 priceChanges price changes
+
 hi hi
 help help
