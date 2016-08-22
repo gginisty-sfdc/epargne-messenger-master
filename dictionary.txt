@@ -9,17 +9,25 @@ searchHouse search house
 searchHouse looking for house
 searchHouse find house
 searchHouse for sale
+priceChanges price changes
+hi hi
+help help
+
+searchHouse_Bedrooms_City_Range (.*) chambres à (.*) entre (.*) et (.*)
+searchHouse_Bedrooms_City_Range (.*) chambres à (.*) de (.*) à (.*)
+searchHouse_Bedrooms_City (.*) chambres à (.*)
+searchHouse_City à (.*)
+searchHouse_City près de (.*)
+searchHouse_Range entre (.*) et (.*)
+searchHouse_Range de (.*) à (.*)
+searchHouse_Bedrooms (.*) chambres
+searchHouse cherche les appartements
+searchHouse recherche un bien
+searchHouse trouve un bien
 searchHouse à vendre
 searchHouse Maisons à vendre
 searchHouse Appartement à vendre
-searchHouse_City à (.*)
-searchHouse_City près de (.*)
-searchHouse_Bedrooms (.*) chambres
-searchHouse_Range entre (.*) et (.*)
+priceChanges changements de prix
 
-
-
-priceChanges price changes
-
-hi hi
-help help
+hi bonjour
+help aide
