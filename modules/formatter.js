@@ -13,17 +13,17 @@ exports.formatProperties = properties => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Schedule visit",
+                        "title": "Planifier un rendez-vous",
                         "payload": "schedule_visit," + property.getId()
                     },
                     {
                         "type": "postback",
-                        "title": "View broker info",
+                        "title": "Informations sur l'agent",
                         "payload": "contact_broker," + property.getId()
                     },
                     {
                         "type": "postback",
-                        "title": "Contact me",
+                        "title": "Contactez-moi",
                         "payload": "contact_me," + property.getId()
                     }
                 ]
@@ -52,17 +52,17 @@ exports.formatPriceChanges = priceChanges => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Schedule visit",
+                        "title": "Planifier un rendez-vous",
                         "payload": "schedule_visit," + property.Id
                     },
                     {
                         "type": "postback",
-                        "title": "View broker info",
+                        "title": "Informations sur l'agent",
                         "payload": "contact_broker," + property.Id
                     },
                     {
                         "type": "postback",
-                        "title": "Contact me",
+                        "title": "Contactez-moi",
                         "payload": "contact_me," + property.Id
                     }
                 ]
@@ -94,22 +94,22 @@ exports.formatAppointment = property => {
             "type": "template",
             "payload": {
                 "template_type": "button",
-                "text": `Select one of the available appointments below at ${property.get("Address__c")} in ${property.get("City__c")}.`,
+                "text": `Choisissez un créneau horaire pour visiter le ${property.get("Address__c")} à ${property.get("City__c")}.`,
                 "buttons": [
                     {
                         "type": "postback",
                         "title": options[0],
-                        "payload": "confirm_visit," + property.get("Address__c") + " in " + property.get("City__c") + "," + options[0]
+                        "payload": "confirm_visit," + property.get("Address__c") + " à " + property.get("City__c") + "," + options[0]
                     },
                     {
                         "type": "postback",
                         "title": options[1],
-                        "payload": "confirm_visit," + property.get("Address__c") + " in " + property.get("City__c") + "," + options[1]
+                        "payload": "confirm_visit," + property.get("Address__c") + " à " + property.get("City__c") + "," + options[1]
                     },
                     {
                         "type": "postback",
                         "title": options[2],
-                        "payload": "confirm_visit," + property.get("Address__c") + " in " + property.get("City__c") + "," + options[2]
+                        "payload": "confirm_visit," + property.get("Address__c") + " à " + property.get("City__c") + "," + options[2]
                     }]
             }
         }
@@ -119,13 +119,13 @@ exports.formatAppointment = property => {
 exports.formatBroker = broker => {
     let elements = [];
     elements.push({
-        title: "Caroline Kingsley",
-        subtitle: "Senior Broker  · 617-219-6363 · ckingsley@dreamhouse.com",
+        title: "Caroline Martin",
+        subtitle: "Agent senior  · 01 12 98 52 52 · cmartin@dreamhouse.com",
         "image_url": "https://s3-us-west-1.amazonaws.com/sfdc-demo/messenger/caroline_500x260.png",
         "buttons": [
             {
                 "type": "postback",
-                "title": "Contact Me",
+                "title": "Contactez-moi",
                 "payload": "contact_me"
             }]
     });
