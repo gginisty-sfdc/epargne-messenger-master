@@ -5,49 +5,49 @@ let salesforce = require('./salesforce'),
     formatter = require('./formatter');
 
 exports.searchHouse = (sender) => {
-    messenger.send({text: `OK, looking for houses for sale around you...`}, sender);
+    messenger.send({text: `D'accord, je recherche les biens à vendre ...`}, sender);
     salesforce.findProperties().then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
 };
 
 exports.searchHouse_City = (sender, values) => {
-    messenger.send({text: `OK, looking for houses in ${values[1]}`}, sender);
+    messenger.send({text: `D'accord, je recherche les biens à ${values[1]}`}, sender);
     salesforce.findProperties({city: values[1]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
 };
 
 exports.searchHouse_Bedrooms_City_Range = (sender, values) => {
-    messenger.send({text: `OK, looking for ${values[1]} bedrooms in ${values[2]} between ${values[3]} and ${values[4]}`}, sender);
+    messenger.send({text: `C'est compris. Je recherche les ${values[1]} chambres à ${values[2]} entre ${values[3]} et ${values[4]}`}, sender);
     salesforce.findProperties({bedrooms: values[1], city: values[2]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
 };
 
 exports.searchHouse_Bedrooms_City = (sender, values) => {
-    messenger.send({text: `OK, looking for ${values[1]} bedroom houses in ${values[2]}`}, sender);
+    messenger.send({text: `Bien reçu. Je regarde les biens à ${values[1]} chambres à ${values[2]}`}, sender);
     salesforce.findProperties({bedrooms: values[1], city: values[2]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
 };
 
 exports.searchHouse_Bedrooms = (sender, values) => {
-    messenger.send({text: `OK, looking for ${values[1]} bedrooms`}, sender);
+    messenger.send({text: `C'est noté. Voici les ${values[1]} chambres`}, sender);
     salesforce.findProperties({bedrooms: values[1]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
 };
 
 exports.searchHouse_Range = (sender, values) => {
-    messenger.send({text: `OK, looking for houses between ${values[1]} and ${values[2]}`}, sender);
+    messenger.send({text: `Bien reçu. Voici les biens entre ${values[1]} et ${values[2]} euros :`}, sender);
     salesforce.findProperties({priceMin: values[1], priceMax: values[2]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
 };
 
 exports.priceChanges = (sender, values) => {
-    messenger.send({text: `OK, looking for recent price changes...`}, sender);
+    messenger.send({text: `D'accord; voici les biens dont le prix a évolué ces derniers jours :`}, sender);
     salesforce.findPriceChanges().then(priceChanges => {
         messenger.send(formatter.formatPriceChanges(priceChanges), sender);
     });
@@ -55,10 +55,10 @@ exports.priceChanges = (sender, values) => {
 
 exports.hi = (sender) => {
     messenger.getUserInfo(sender).then(response => {
-        messenger.send({text: `Hello, ${response.first_name}!`}, sender);
+        messenger.send({text: `Bonjour, ${response.first_name}!`}, sender);
     });
 };
 
 exports.help = (sender) => {
-    messenger.send({text: `You can ask me questions like "Find houses in Boston", "3 bedrooms in Boston", "3 bedrooms in Boston between 500000 and 750000", "show me price changes"`}, sender);
+    messenger.send({text: `Bienvenue. Vous pouvez me poser des questions du type : "Trouver un appartement à Paris", "2 chambres à Paris", "Appartements à Paris entres 200000 et 500000" ou bien "Changements de prix"`}, sender);
 };
