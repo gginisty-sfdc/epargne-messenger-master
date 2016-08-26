@@ -13,12 +13,12 @@ exports.formatProperties = properties => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Planifier un rendez-vous",
+                        "title": "Prendre rendez-vous",
                         "payload": "schedule_visit," + property.getId()
                     },
                     {
                         "type": "postback",
-                        "title": "Informations sur l'agent",
+                        "title": "Mon agent",
                         "payload": "contact_broker," + property.getId()
                     },
                     {
@@ -52,12 +52,12 @@ exports.formatPriceChanges = priceChanges => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Planifier un rendez-vous",
+                        "title": "Prendre rendez-vous",
                         "payload": "schedule_visit," + property.Id
                     },
                     {
                         "type": "postback",
-                        "title": "Informations sur l'agent",
+                        "title": "Mon agent",
                         "payload": "contact_broker," + property.Id
                     },
                     {
