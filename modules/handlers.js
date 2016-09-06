@@ -5,14 +5,14 @@ let salesforce = require('./salesforce'),
     formatter = require('./formatter');
 
 exports.searchHouse = (sender) => {
-    messenger.send({text: `D'accord, je recherche les biens à vendre ...`}, sender);
+    messenger.send({text: `D'accord, je recherche les nouveaux projets ...`}, sender);
     salesforce.findProperties().then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
 };
 
 exports.searchHouse_City = (sender, values) => {
-    messenger.send({text: `D'accord, je recherche les biens à ${values[1]}`}, sender);
+    messenger.send({text: `D'accord, je recherche les projets à ${values[1]}`}, sender);
     salesforce.findProperties({city: values[1]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
@@ -60,5 +60,6 @@ exports.hi = (sender) => {
 };
 
 exports.help = (sender) => {
-    messenger.send({text: `Bienvenue. Vous pouvez me poser des questions du type : "Trouver un appartement à Paris", "2 chambres à Paris", "Appartements à Paris entres 200000 et 500000" ou bien "Changements de prix"`}, sender);
+    messenger.send({text: `Bienvenue dans votre asistant partenaire Schneider Electric. 
+    Vous pouvez me poser des questions du type : "Quels sont les nouveaux projets ?", "Projets à Paris", "Projets près de Puteaux"..."`}, sender);
 };
