@@ -125,12 +125,12 @@ exports.formatBroker = broker => {
         "buttons": [
             {
                 "type": "web_url",
-                "title": "Formations Schneider",
+                "title": "Mes formations",
                 "url": "http://www.schneider-electric.fr/sites/france/fr/produits-services/formations/formations.page"
             },
             {
                 "type": "web_url",
-                "title": "Communauté Life is On",
+                "title": "Communauté Schneider",
                 "url": "http://schneider-demo.force.com/a_level2"
             }]
     });
