@@ -13,12 +13,12 @@ exports.formatProperties = properties => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Prendre rendez-vous",
+                        "title": "Postuler",
                         "payload": "schedule_visit," + property.getId()
                     },
                     {
                         "type": "postback",
-                        "title": "Mon agent",
+                        "title": "Compétences requises",
                         "payload": "contact_broker," + property.getId()
                     },
                     {
@@ -52,12 +52,12 @@ exports.formatPriceChanges = priceChanges => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Prendre rendez-vous",
+                        "title": "Postuler",
                         "payload": "schedule_visit," + property.Id
                     },
                     {
                         "type": "postback",
-                        "title": "Mon agent",
+                        "title": "Compétences requises",
                         "payload": "contact_broker," + property.Id
                     },
                     {
@@ -94,7 +94,7 @@ exports.formatAppointment = property => {
             "type": "template",
             "payload": {
                 "template_type": "button",
-                "text": `Choisissez un créneau horaire pour visiter le ${property.get("Address__c")} à ${property.get("City__c")}.`,
+                "text": `Choisissez un créneau horaire pour rencontrer votre agent Schneider ${property.get("Address__c")} à ${property.get("City__c")}.`,
                 "buttons": [
                     {
                         "type": "postback",
@@ -121,12 +121,12 @@ exports.formatBroker = broker => {
     elements.push({
         title: "Caroline Martin",
         subtitle: "Agent senior  · 01 12 98 52 52 · cmartin@dreamhouse.com",
-        "image_url": "https://s3-us-west-1.amazonaws.com/sfdc-demo/messenger/caroline_500x260.png",
+        "image_url": "https://www.dropbox.com/s/0sz0sb25oigzgyk/SE%20messenger-01.png",
         "buttons": [
             {
                 "type": "postback",
-                "title": "Contactez-moi",
-                "payload": "contact_me"
+                "title": "Découvrir les formations",
+                "payload": "http://www.schneider-electric.fr/sites/france/fr/produits-services/formations/formations.page"
             }]
     });
     return {
