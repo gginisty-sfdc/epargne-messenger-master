@@ -13,7 +13,7 @@ exports.formatProperties = properties => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Contacter un conseiller",
+                        "title": "Mon conseiller",
                         "payload": "schedule_visit," + property.getId()
                     },
                     {
@@ -52,7 +52,7 @@ exports.formatPriceChanges = priceChanges => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Contacter un conseiller",
+                        "title": "Mon conseiller",
                         "payload": "schedule_visit," + property.Id
                     },
                     {
