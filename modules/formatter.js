@@ -121,12 +121,12 @@ exports.formatBroker = broker => {
     elements.push({
         title: "Caroline Martin",
         subtitle: "Agent senior  · 01 12 98 52 52 · cmartin@dreamhouse.com",
-        "image_url": "https://www.dropbox.com/s/0sz0sb25oigzgyk/SE%20messenger-01.png",
+        "image_url": "https://dl.dropboxusercontent.com/content_link/cTWV73zLeEzMFuqW6bLP6rXAutmEntHJAHyWC6zlzMstePVQKBDOXMjxCul5Zd0W/file",
         "buttons": [
             {
-                "type": "postback",
+                "type": "web_url",
                 "title": "Découvrir les formations",
-                "payload": "http://www.schneider-electric.fr/sites/france/fr/produits-services/formations/formations.page"
+                "url": "http://www.schneider-electric.fr/sites/france/fr/produits-services/formations/formations.page"
             }]
     });
     return {
