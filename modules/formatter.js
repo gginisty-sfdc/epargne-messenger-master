@@ -119,18 +119,18 @@ exports.formatAppointment = property => {
 exports.formatBroker = broker => {
     let elements = [];
     elements.push({
-        title: "Caroline Martin",
-        subtitle: "Agent senior  · 01 12 98 52 52 · cmartin@dreamhouse.com",
-        "image_url": "https://dl.dropboxusercontent.com/content_link/cTWV73zLeEzMFuqW6bLP6rXAutmEntHJAHyWC6zlzMstePVQKBDOXMjxCul5Zd0W/file",
+        title: "Niveau de compétences : 4/5",
+        subtitle: "Montez en compétences grâce aux formations Schneider Electric, et intéragissez avec la communauté !",
+        "image_url": "https://github.com/gginisty-sfdc/electrical-bot-messenger/raw/master/Shneider%20messenger-01.png",
         "buttons": [
             {
                 "type": "web_url",
-                "title": "Découvrir les formations",
+                "title": "Formations Schneider",
                 "url": "http://www.schneider-electric.fr/sites/france/fr/produits-services/formations/formations.page"
             },
             {
                 "type": "web_url",
-                "title": "Accéder à la communauté",
+                "title": "Communauté Life is On",
                 "url": "http://schneider-demo.force.com/a_level2"
             }]
     });
