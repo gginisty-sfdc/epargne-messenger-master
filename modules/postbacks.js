@@ -11,7 +11,7 @@ exports.schedule_visit = (sender, values) => {
 };
 
 exports.contact_broker = (sender, values) => {
-    messenger.send({text: "Voici l'agent en charge de ce bien : "}, sender);
+    messenger.send({text: "Voici les compétences requises pour postuler à ce projet : "}, sender);
     messenger.send(formatter.formatBroker(), sender);
 };
 
@@ -24,7 +24,7 @@ exports.contact_me = (sender, values) => {
     let propertyId = values[1];
     messenger.getUserInfo(sender).then(response => {
         salesforce.createCase(propertyId, response.first_name + " " + response.first_name, sender).then(() => {
-            messenger.send({text: `Merci pour votre intérêt ${response.first_name}. J'ai demandé à un agent de vous contacter dès que possible`}, sender);
+            messenger.send({text: `Merci pour votre intérêt ${response.first_name}. J'ai demandé à un conseiller de vous contacter dès que possible`}, sender);
         });
     });
 
