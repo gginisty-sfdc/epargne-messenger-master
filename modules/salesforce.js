@@ -103,8 +103,7 @@ let createCase = (propertyId, customerName, customerId) => {
         c.set('origin', 'Facebook');
         c.set('status', 'New');
         c.set('Property__c', propertyId);
-        c.set('Urgency__c', 'Medium')
-        c.set('Status_Indicator__c', 'New')
+
 
         org.insert({sobject: c}, err => {
             if (err) {
