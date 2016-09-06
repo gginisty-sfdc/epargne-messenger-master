@@ -13,7 +13,7 @@ exports.formatProperties = properties => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Postuler",
+                        "title": "Contacter un conseiller",
                         "payload": "schedule_visit," + property.getId()
                     },
                     {
@@ -23,7 +23,7 @@ exports.formatProperties = properties => {
                     },
                     {
                         "type": "postback",
-                        "title": "Contactez-moi",
+                        "title": "Postuler",
                         "payload": "contact_me," + property.getId()
                     }
                 ]
@@ -52,7 +52,7 @@ exports.formatPriceChanges = priceChanges => {
                 "buttons": [
                     {
                         "type": "postback",
-                        "title": "Postuler",
+                        "title": "Contacter un conseiller",
                         "payload": "schedule_visit," + property.Id
                     },
                     {
@@ -62,7 +62,7 @@ exports.formatPriceChanges = priceChanges => {
                     },
                     {
                         "type": "postback",
-                        "title": "Contactez-moi",
+                        "title": "Postuler",
                         "payload": "contact_me," + property.Id
                     }
                 ]
@@ -83,7 +83,7 @@ exports.formatPriceChanges = priceChanges => {
 
 exports.formatAppointment = property => {
     var options = [
-        moment().add(1, 'days').format('ddd MMM Do') + ' at 10am',
+        moment.lang("fr").add(1, 'days').format('ddd MMM Do') + ' at 10am',
         moment().add(2, 'days').format('ddd MMM Do') + ' at 9am',
         moment().add(2, 'days').format('ddd MMM Do') + ' at 5pm',
         moment().add(3, 'days').format('ddd MMM Do') + ' at 1pm',
@@ -127,6 +127,11 @@ exports.formatBroker = broker => {
                 "type": "web_url",
                 "title": "Découvrir les formations",
                 "url": "http://www.schneider-electric.fr/sites/france/fr/produits-services/formations/formations.page"
+            },
+            {
+                "type": "web_url",
+                "title": "Accéder à la communauté",
+                "url": "http://schneider-demo.force.com/a_level2"
             }]
     });
     return {
