@@ -32,3 +32,19 @@ priceChanges changements de prix
 
 hi bonjour
 help aide
+
+
+searchHouse_City Projets à (.*)
+searchHouse_City Nouveaux projets à (.*)
+searchHouse_City Projets près de (.*)
+searchHouse_Range entre (.*) et (.*)
+searchHouse_Range de (.*) à (.*)
+searchHouse_Bedrooms (.*) chambres
+searchHouse Recherche les nouveaux projets
+searchHouse Recherche projets
+searchHouse Quels sont les nouveaux projets ?
+searchHouse Projets
+priceChanges changements de prix
+
+hi bonjour
+help aide
