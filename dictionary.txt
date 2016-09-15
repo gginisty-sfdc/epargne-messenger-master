@@ -1,3 +1,25 @@
+searchHouse_Bedrooms_City (.*) ans de type (.*)
+searchHouse_Bedrooms_City horizon (.*) ans de type (.*)
+searchHouse_City Placements de type (.*)
+searchHouse_City (.*) disponibles
+searchHouse_City Quels sont les (.*) disponibles ?
+searchHouse_City (.*) recommandés ?
+searchHouse_City Quels sont les (.*) recommandés ?
+searchHouse_Range entre (.*) et (.*)
+searchHouse_Range de (.*) à (.*)
+searchHouse_Bedrooms Produits à horizon de placement (.*) ans
+searchHouse_Bedrooms Produits à horizon (.*) ans
+searchHouse_Bedroomsà horizon (.*) ans
+searchHouse Recherche Produits disponibles
+searchHouse Recherche Produits Natixis
+priceChanges changements de prix
+
+hi bonjour
+help aide
+
+
+
+
 searchHouse_Bedrooms_City_Range (.*) bedrooms in (.*) between (.*) and (.*)
 searchHouse_Bedrooms_City_Range (.*) bedrooms in (.*) from (.*) to (.*)
 searchHouse_Bedrooms_City (.*) bedrooms in (.*)
