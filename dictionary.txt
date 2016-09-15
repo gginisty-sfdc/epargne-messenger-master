@@ -50,6 +50,8 @@ hi bonjour
 help aide
 
 searchHouse_Bedrooms_City Produits à horizon (.*) ans de type (.*)
+searchHouse_Bedrooms_City (.*) ans de type (.*)
+searchHouse_Bedrooms_City horizon (.*) ans de type (.*)
 searchHouse_City Placements de type (.*)
 searchHouse_City (.*) disponibles
 searchHouse_City Quels sont les (.*) disponibles ?
