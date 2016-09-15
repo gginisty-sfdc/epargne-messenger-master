@@ -61,5 +61,5 @@ exports.hi = (sender) => {
 
 exports.help = (sender) => {
     messenger.send({text: `J'aide les épargnants Natixis à choisir les produits les plus adaptés. 
-    Vous pouvez me poser des questions du type "Produits à horizon 10 ans", "Quels sont les PERCO à risque faible?" ou bien "Quel est mon plafond d'abondement?"`}, sender);
+Vous pouvez me poser des questions du type "Produits à horizon 10 ans", "Quels sont les PERCO à risque faible?" ou bien "Quel est mon plafond d'abondement?"`}, sender);
 };
