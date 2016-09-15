@@ -1,4 +1,4 @@
-searchProducts_City_Address (*) de risque (*)
+searchProducts_City_Address (.*) de risque (.*)
 searchHouse_Bedrooms_City horizon (.*) ans de type (.*)
 searchHouse_Bedrooms_City (.*) ans de type (.*)
 searchHouse_City Placements de type (.*)
