@@ -32,6 +32,13 @@ exports.searchHouse_Bedrooms_City = (sender, values) => {
     });
 };
 
+exports.searchProducts_City_Address = (sender, values) => {
+    messenger.send({text: `Bien reçu. Voici nos ${values[1]} à risque ${values[2]}`}, sender);
+    salesforce.findProperties({city: values[1], address: values[2]}).then(properties => {
+        messenger.send(formatter.formatProperties(properties), sender);
+    });
+};
+
 exports.searchHouse_Bedrooms = (sender, values) => {
     messenger.send({text: `C'est noté. Voici les ${values[1]} chambres`}, sender);
     salesforce.findProperties({bedrooms: values[1]}).then(properties => {
