@@ -48,3 +48,21 @@ priceChanges changements de prix
 
 hi bonjour
 help aide
+
+searchHouse_City Placements de type (.*)
+searchHouse_City (.*) disponibles
+searchHouse_City Quels sont les (.*) disponibles ?
+searchHouse_City (.*) recommandés ?
+searchHouse_City Quels sont les (.*) recommandés ?
+searchHouse_Range entre (.*) et (.*)
+searchHouse_Range de (.*) à (.*)
+searchHouse_Bedrooms Produits à horizon de placement (.*) ans
+searchHouse_Bedrooms Produits à horizon (.*) ans
+searchHouse_Bedroomsà horizon (.*) ans
+searchHouse Recherche Produits disponibles
+searchHouse Recherche Produits Natixis
+priceChanges changements de prix
+
+hi bonjour
+help aide
+
