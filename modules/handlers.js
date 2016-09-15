@@ -5,14 +5,14 @@ let salesforce = require('./salesforce'),
     formatter = require('./formatter');
 
 exports.searchHouse = (sender) => {
-    messenger.send({text: `D'accord, je recherche les nouveaux projets ...`}, sender);
+    messenger.send({text: `D'accord, voici nos placements disponibles ...`}, sender);
     salesforce.findProperties().then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
 };
 
 exports.searchHouse_City = (sender, values) => {
-    messenger.send({text: `D'accord, je recherche les projets à ${values[1]}`}, sender);
+    messenger.send({text: `D'accord, je recherche les ${values[1]}`}, sender);
     salesforce.findProperties({city: values[1]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
@@ -26,7 +26,7 @@ exports.searchHouse_Bedrooms_City_Range = (sender, values) => {
 };
 
 exports.searchHouse_Bedrooms_City = (sender, values) => {
-    messenger.send({text: `Bien reçu. Je regarde les biens à ${values[1]} chambres à ${values[2]}`}, sender);
+    messenger.send({text: `Bien reçu. Voici nos ${values[1]} à horizon de placement ${values[2]} ans:`}, sender);
     salesforce.findProperties({bedrooms: values[1], city: values[2]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
@@ -40,7 +40,7 @@ exports.searchProducts_City_Address = (sender, values) => {
 };
 
 exports.searchHouse_Bedrooms = (sender, values) => {
-    messenger.send({text: `C'est noté. Voici les ${values[1]} chambres`}, sender);
+    messenger.send({text: `C'est noté. Voici nos placements à horizon ${values[1]} ans`}, sender);
     salesforce.findProperties({bedrooms: values[1]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
@@ -54,7 +54,7 @@ exports.searchHouse_Range = (sender, values) => {
 };
 
 exports.priceChanges = (sender, values) => {
-    messenger.send({text: `D'accord; voici les biens dont le prix a évolué ces derniers jours :`}, sender);
+    messenger.send({text: `D'accord; voici les produits dont la VL a évolué ces derniers jours :`}, sender);
     salesforce.findPriceChanges().then(priceChanges => {
         messenger.send(formatter.formatPriceChanges(priceChanges), sender);
     });
