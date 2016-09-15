@@ -55,12 +55,11 @@ exports.priceChanges = (sender, values) => {
 
 exports.hi = (sender) => {
     messenger.getUserInfo(sender).then(response => {
-        messenger.send({text: `Bonjour, ${response.first_name}!`}, sender);
-        messenger.send({text: `J'espère que votre semaine se déroule bien. Que souhaitez-vous faire aujourd'hui?`}, sender);
+        messenger.send({text: `Bonjour, ${response.first_name}! Que puis-je faire pour vous aujourd'hui ?`}, sender);
     });
 };
 
 exports.help = (sender) => {
-    messenger.send({text: `J'aide les partenaires Schneider Electric à trouver de nouveaux projets. 
-    Vous pouvez me poser des questions du type : "Quels sont les nouveaux projets ?", "Projets à Paris", "Projets près de Versailles"..."`}, sender);
+    messenger.send({text: `J'aide les épargnants Natixis à choisir les produits les plus adaptés. 
+    Vous pouvez me poser des questions du type "Produits à horizon 10 ans", "Quels sont les PERCO à risque faible?" ou bien "Quel est mon plafond d'abondement?"`}, sender);
 };
