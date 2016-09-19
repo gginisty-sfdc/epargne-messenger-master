@@ -7,6 +7,7 @@ searchHouse_City Placements de type (.*)
 searchHouse_City (.*) disponibles
 searchHouse_City fonds (.*) disponibles
 searchHouse_City fonds en (.*)
+searchHouse_City fonds (.*)
 searchHouse_City placements en (.*) disponibles
 searchHouse_City placements en (.*)
 searchHouse_City Quels sont les (.*) disponibles ?
@@ -21,7 +22,9 @@ searchHouse Recherche Produits disponibles
 searchHouse Recherche Produits Natixis
 priceChanges changements de prix
 
-details quel est mon plafond d'abondement ?
+details quel est mon plafond d'abondement
+details quel est mon plafond
+details détails de mon plafond
 details plafond d'abondement
 hi bonjour
 help aide
