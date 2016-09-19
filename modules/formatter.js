@@ -121,7 +121,7 @@ exports.formatBroker = broker => {
     elements.push({
         title: "Niveau de compétences : 4/5",
         subtitle: "Montez en compétences grâce aux formations Schneider Electric, et intéragissez avec la communauté !",
-        "image_url": "https://github.com/gginisty-sfdc/electrical-bot-messenger/raw/master/Shneider%20messenger-01.png",
+        "image_url": "https://github.com/gginisty-sfdc/epargne-messenger-master/raw/master/img/distribution_opcvm.png",
         "buttons": [
             {
                 "type": "web_url",
