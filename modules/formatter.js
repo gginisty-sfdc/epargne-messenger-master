@@ -8,7 +8,7 @@ exports.formatProperties = properties => {
     properties.forEach(property => {
             elements.push({
                 title: property.get("Title__c"),
-                subtitle: `${property.get("Address__c")}, ${property.get("City__c")} ${property.get("State__c")} · ${numeral(property.get("Price__c")).format('$0,0')}`,
+                subtitle: `Fonds en ${property.get("City__c")} de risque ${property.get("Address__c")}, ${property.get("State__c")} · VL : ${numeral(property.get("Price__c")).format('€0,0')}`,
                 "image_url": property.get("Picture__c"),
                 "buttons": [
                     {
