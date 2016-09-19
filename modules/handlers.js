@@ -12,7 +12,7 @@ exports.searchHouse = (sender) => {
 };
 
 exports.searchHouse_City = (sender, values) => {
-    messenger.send({text: `D'accord, je recherche les ${values[1]}`}, sender);
+    messenger.send({text: `D'accord, je recherche les fonds en ${values[1]}`}, sender);
     salesforce.findProperties({city: values[1]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
@@ -26,14 +26,14 @@ exports.searchHouse_Bedrooms_City_Range = (sender, values) => {
 };
 
 exports.searchHouse_Bedrooms_City = (sender, values) => {
-    messenger.send({text: `Bien reçu. Voici nos ${values[1]} à horizon de placement ${values[2]} ans:`}, sender);
+    messenger.send({text: `Bien reçu. Voici nos fonds ${values[1]} à horizon de placement ${values[2]} ans:`}, sender);
     salesforce.findProperties({bedrooms: values[1], city: values[2]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
 };
 
 exports.searchProducts_City_Address = (sender, values) => {
-    messenger.send({text: `Bien reçu. Voici nos ${values[1]} à risque ${values[2]}`}, sender);
+    messenger.send({text: `Bien reçu. Voici nos fonds ${values[1]} à risque ${values[2]}`}, sender);
     salesforce.findProperties({city: values[1], address: values[2]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
@@ -47,7 +47,7 @@ exports.searchHouse_Bedrooms = (sender, values) => {
 };
 
 exports.searchHouse_Range = (sender, values) => {
-    messenger.send({text: `Bien reçu. Voici les biens entre ${values[1]} et ${values[2]} euros :`}, sender);
+    messenger.send({text: `Bien reçu. Voici les placements entre ${values[1]} et ${values[2]} euros :`}, sender);
     salesforce.findProperties({priceMin: values[1], priceMax: values[2]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
