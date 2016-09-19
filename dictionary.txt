@@ -6,6 +6,7 @@ searchHouse_Bedrooms_City (.*) ans en (.*)
 searchHouse_City Placements de type (.*)
 searchHouse_City (.*) disponibles
 searchHouse_City fonds (.*) disponibles
+searchHouse_City fonds en (.*)
 searchHouse_City placements en (.*) disponibles
 searchHouse_City placements en (.*)
 searchHouse_City Quels sont les (.*) disponibles ?
