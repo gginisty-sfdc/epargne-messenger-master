@@ -121,7 +121,7 @@ exports.formatBroker = broker => {
     elements.push({
         title: "Rendement du fonds sur 5 ans",
         subtitle: "Découvrez les dernières informations sur ce fonds sur l'application Mon Épargne Salariale",
-        "image_url": "https://github.com/gginisty-sfdc/epargne-messenger-master/raw/master/img/distribution_opcvm.png",
+        "image_url": "https://github.com/gginisty-sfdc/epargne-messenger-master/raw/master/img/morningstar.png",
         "buttons": [
             {
                 "type": "web_url",
