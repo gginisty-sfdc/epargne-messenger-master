@@ -8,7 +8,7 @@ exports.formatProperties = properties => {
     properties.forEach(property => {
             elements.push({
                 title: property.get("Title__c"),
-                subtitle: `Fonds en ${property.get("City__c")} de risque ${property.get("Address__c")}, ${property.get("State__c")} · VL : ${numeral(property.get("Price__c")).format('€0,0')}`,
+                subtitle: `Fonds en ${property.get("City__c")} de risque ${property.get("Address__c")}, ${property.get("State__c")} · VL : € ${numeral(property.get("Price__c")).format('0,0')}`,
                 "image_url": property.get("Picture__c"),
                 "buttons": [
                     {
@@ -94,7 +94,7 @@ exports.formatAppointment = property => {
             "type": "template",
             "payload": {
                 "template_type": "button",
-                "text": `Choisissez un créneau horaire pour rencontrer votre conseiller Natixis ${property.get("Address__c")} à ${property.get("City__c")}.`,
+                "text": `Choisissez un créneau horaire pour rencontrer votre conseiller Natixis.`,
                 "buttons": [
                     {
                         "type": "postback",
@@ -120,13 +120,13 @@ exports.formatBroker = broker => {
     let elements = [];
     elements.push({
         title: "Rendement du fonds sur 5 ans",
-        subtitle: "Découvrez toutes les informations sur l'application Mon Épargne Salariale",
+        subtitle: "Découvrez les dernières informations sur ce fonds sur l'application Mon Épargne Salariale",
         "image_url": "https://github.com/gginisty-sfdc/epargne-messenger-master/raw/master/img/distribution_opcvm.png",
         "buttons": [
             {
                 "type": "web_url",
-                "title": "Télécharger l'app",
-                "url": "https://itunes.apple.com/fr/app/monepargnesalariale/id438488243?mt=8"
+                "title": "Accéder à l'application",
+                "url": "http://www.interepargne.natixis.com/applicationmobile"
             },
             ]
     });
