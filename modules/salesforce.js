@@ -104,6 +104,7 @@ let createCase = (propertyId, customerName, customerId) => {
         c.set('origin', 'Facebook');
         c.set('status', 'New');
         c.set('Property__c', propertyId);
+        c.set('Contact', customerName);
 
 
         org.insert({sobject: c}, err => {
