@@ -18,12 +18,12 @@ exports.formatProperties = properties => {
                     },
                     {
                         "type": "postback",
-                        "title": "Compétences requises",
+                        "title": "Plus d'informations",
                         "payload": "contact_broker," + property.getId()
                     },
                     {
                         "type": "postback",
-                        "title": "Postuler",
+                        "title": "Souscrire",
                         "payload": "contact_me," + property.getId()
                     }
                 ]
@@ -57,12 +57,12 @@ exports.formatPriceChanges = priceChanges => {
                     },
                     {
                         "type": "postback",
-                        "title": "Compétences requises",
+                        "title": "Plus d'informations",
                         "payload": "contact_broker," + property.Id
                     },
                     {
                         "type": "postback",
-                        "title": "Postuler",
+                        "title": "Souscrire",
                         "payload": "contact_me," + property.Id
                     }
                 ]
