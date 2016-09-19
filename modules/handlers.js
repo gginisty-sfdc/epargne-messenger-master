@@ -70,3 +70,8 @@ exports.help = (sender) => {
     messenger.send({text: `J'aide les épargnants Natixis à choisir les produits les plus adaptés. 
 Vous pouvez me poser des questions du type "Produits à horizon 10 ans", "Quels sont les PERCO à risque faible?" ou bien "Quel est mon plafond d'abondement?"`}, sender);
 };
+
+exports.details = (sender) => {
+    messenger.send({text: `Le plafond d'abondement de votre société est de 2200,00€ mensuels pour l'épargne salariale. 
+    Pour plus d'informations, contactez votre responsable épargne au +33 1 72 10 94 00`}, sender);
+};
