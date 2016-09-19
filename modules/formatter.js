@@ -94,7 +94,7 @@ exports.formatAppointment = property => {
             "type": "template",
             "payload": {
                 "template_type": "button",
-                "text": `Choisissez un créneau horaire pour rencontrer votre agent Schneider ${property.get("Address__c")} à ${property.get("City__c")}.`,
+                "text": `Choisissez un créneau horaire pour rencontrer votre conseiller Natixis ${property.get("Address__c")} à ${property.get("City__c")}.`,
                 "buttons": [
                     {
                         "type": "postback",
@@ -119,20 +119,16 @@ exports.formatAppointment = property => {
 exports.formatBroker = broker => {
     let elements = [];
     elements.push({
-        title: "Niveau de compétences : 4/5",
-        subtitle: "Montez en compétences grâce aux formations Schneider Electric, et intéragissez avec la communauté !",
+        title: "Rendement du fonds sur 5 ans",
+        subtitle: "Découvrez toutes les informations sur l'application Mon Épargne Salariale",
         "image_url": "https://github.com/gginisty-sfdc/epargne-messenger-master/raw/master/img/distribution_opcvm.png",
         "buttons": [
             {
                 "type": "web_url",
-                "title": "Mes formations",
-                "url": "http://www.schneider-electric.fr/sites/france/fr/produits-services/formations/formations.page"
+                "title": "Télécharger l'app",
+                "url": "https://itunes.apple.com/fr/app/monepargnesalariale/id438488243?mt=8"
             },
-            {
-                "type": "web_url",
-                "title": "Communauté Schneider",
-                "url": "http://schneider-demo.force.com/a_level2"
-            }]
+            ]
     });
     return {
         "attachment": {
