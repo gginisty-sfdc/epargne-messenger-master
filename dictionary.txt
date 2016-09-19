@@ -1,8 +1,13 @@
 searchProducts_City_Address (.*) de risque (.*)
 searchHouse_Bedrooms_City horizon (.*) ans de type (.*)
+searchHouse_Bedrooms_City horizon (.*) ans en (.*)
 searchHouse_Bedrooms_City (.*) ans de type (.*)
+searchHouse_Bedrooms_City (.*) ans en (.*)
 searchHouse_City Placements de type (.*)
 searchHouse_City (.*) disponibles
+searchHouse_City fonds (.*) disponibles
+searchHouse_City placements en (.*) disponibles
+searchHouse_City placements en (.*)
 searchHouse_City Quels sont les (.*) disponibles ?
 searchHouse_City (.*) recommandés ?
 searchHouse_City Quels sont les (.*) recommandés ?
@@ -15,6 +20,8 @@ searchHouse Recherche Produits disponibles
 searchHouse Recherche Produits Natixis
 priceChanges changements de prix
 
+details quel est mon plafond d'abondement ?
+details plafond d'abondement
 hi bonjour
 help aide
 
