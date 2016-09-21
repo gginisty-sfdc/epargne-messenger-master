@@ -1,12 +1,12 @@
-searchHouse_Bedrooms à horizon (.*) ans
-searchProducts_City_Address (.*) de risque (.*)
+searchProducts_City_Address fonds en (.*) de risque (.*)
+searchProducts_City_Address placements en (.*) de risque (.*)
 searchHouse_Bedrooms_City horizon (.*) ans de type (.*)
 searchHouse_Bedrooms_City horizon (.*) ans en (.*)
 searchHouse_Bedrooms_City (.*) ans de type (.*)
 searchHouse_Bedrooms_City (.*) ans en (.*)
 searchHouse_City Placements de type (.*)
-searchHouse_City (.*) disponibles
-searchHouse_City fonds (.*) disponibles
+searchHouse_City fonds en (.*) disponibles
+searchHouse_City placements en (.*) disponibles
 searchHouse_City fonds en (.*)
 searchHouse_City fonds (.*)
 searchHouse_City placements en (.*) disponibles
@@ -16,8 +16,9 @@ searchHouse_City (.*) recommandés ?
 searchHouse_City Quels sont les (.*) recommandés ?
 searchHouse_Range entre (.*) et (.*)
 searchHouse_Range de (.*) à (.*)
+searchHouse_Bedrooms à horizon (.*) ans
 searchHouse_Bedrooms Produits à horizon de placement (.*) ans
-searchHouse Recherche Produits disponibles
+searchHouse Recherche Placements disponibles
 searchHouse Recherche Produits Société Générale
 priceChanges changements de prix
 
