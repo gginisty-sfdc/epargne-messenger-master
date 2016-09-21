@@ -120,13 +120,13 @@ exports.formatBroker = broker => {
     let elements = [];
     elements.push({
         title: "Rendement du fonds sur 5 ans",
-        subtitle: "Découvrez les dernières informations sur ce fonds sur l'application Société Générale",
+        subtitle: "Découvrez les dernières informations sur ce fonds sur l'application Esalia",
         "image_url": "https://github.com/gginisty-sfdc/epargne-messenger-master/raw/master/img/morningstar.png",
         "buttons": [
             {
                 "type": "web_url",
                 "title": "Accéder à l'application",
-                "url": "https://itunes.apple.com/fr/app/lappli-societe-generale-pour/id376991016?mt=8"
+                "url": "https://www.esalia.com/fr/epargnants/acceder-aux-services/nos-services-ligne/"
             },
             ]
     });
