@@ -1,3 +1,4 @@
+searchHouse_Bedrooms à horizon (.*) ans
 searchProducts_City_Address (.*) de risque (.*)
 searchHouse_Bedrooms_City horizon (.*) ans de type (.*)
 searchHouse_Bedrooms_City horizon (.*) ans en (.*)
@@ -16,10 +17,8 @@ searchHouse_City Quels sont les (.*) recommandés ?
 searchHouse_Range entre (.*) et (.*)
 searchHouse_Range de (.*) à (.*)
 searchHouse_Bedrooms Produits à horizon de placement (.*) ans
-searchHouse_Bedrooms Produits à horizon (.*) ans
-searchHouse_Bedroomsà horizon (.*) ans
 searchHouse Recherche Produits disponibles
-searchHouse Recherche Produits Natixis
+searchHouse Recherche Produits Société Générale
 priceChanges changements de prix
 
 details quel est mon plafond d'abondement
