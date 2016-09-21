@@ -120,13 +120,13 @@ exports.formatBroker = broker => {
     let elements = [];
     elements.push({
         title: "Rendement du fonds sur 5 ans",
-        subtitle: "Découvrez les dernières informations sur ce fonds sur l'application Mon Épargne Salariale",
+        subtitle: "Découvrez les dernières informations sur ce fonds sur l'application Société Générale",
         "image_url": "https://github.com/gginisty-sfdc/epargne-messenger-master/raw/master/img/morningstar.png",
         "buttons": [
             {
                 "type": "web_url",
                 "title": "Accéder à l'application",
-                "url": "http://www.interepargne.natixis.com/applicationmobile"
+                "url": "https://itunes.apple.com/fr/app/lappli-societe-generale-pour/id376991016?mt=8"
             },
             ]
     });
