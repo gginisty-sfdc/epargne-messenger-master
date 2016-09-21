@@ -26,7 +26,7 @@ exports.searchHouse_Bedrooms_City_Range = (sender, values) => {
 };
 
 exports.searchHouse_Bedrooms_City = (sender, values) => {
-    messenger.send({text: `Bien reçu. Voici nos fonds ${values[1]} à horizon de placement ${values[2]} ans:`}, sender);
+    messenger.send({text: `Bien reçu. Voici nos fonds en ${values[2]} à horizon de placement ${values[1]} ans:`}, sender);
     salesforce.findProperties({bedrooms: values[1], city: values[2]}).then(properties => {
         messenger.send(formatter.formatProperties(properties), sender);
     });
