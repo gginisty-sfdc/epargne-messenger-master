@@ -119,14 +119,14 @@ exports.formatAppointment = property => {
 exports.formatBroker = broker => {
     let elements = [];
     elements.push({
-        title: "Rendement du fonds sur 5 ans",
-        subtitle: "Découvrez les dernières informations sur ce fonds sur l'application Esalia",
+        title: "Le fonds en un cline d'œil",
+        subtitle: "Découvrez les dernières informations sur ce fonds sur l'application Mon Épargne Salariale",
         "image_url": "https://github.com/gginisty-sfdc/epargne-messenger-master/raw/master/img/morningstar.png",
         "buttons": [
             {
                 "type": "web_url",
-                "title": "Accéder à l'application",
-                "url": "https://www.esalia.com/fr/epargnants/acceder-aux-services/nos-services-ligne/"
+                "title": "Accéder à l'app",
+                "url": "http://www.interepargne.natixis.com/applicationmobile/"
             },
             ]
     });
