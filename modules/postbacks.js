@@ -24,7 +24,7 @@ exports.contact_me = (sender, values) => {
     let propertyId = values[1];
     messenger.getUserInfo(sender).then(response => {
         salesforce.createCase(propertyId, response.first_name + " " + response.first_name, sender).then(() => {
-            messenger.send({text: `Merci pour votre intérêt ${response.first_name}. J'ai demandé à un expert Société Générale de vous contacter dès que possible`}, sender);
+            messenger.send({text: `Merci pour votre intérêt ${response.first_name}. J'ai demandé à un expert Natixis de vous contacter dès que possible`}, sender);
         });
     });
 
