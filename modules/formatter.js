@@ -119,8 +119,8 @@ exports.formatAppointment = property => {
 exports.formatBroker = broker => {
     let elements = [];
     elements.push({
-        title: "Le fonds en un cline d'œil",
-        subtitle: "Découvrez les dernières informations sur ce fonds sur l'application Mon Épargne Salariale",
+        title: "Le fonds en un clin d'œil",
+        subtitle: "Découvrez l'évolution de ce fonds sur l'appli Mon Épargne Salariale",
         "image_url": "https://github.com/gginisty-sfdc/epargne-messenger-master/raw/master/img/morningstar.png",
         "buttons": [
             {
